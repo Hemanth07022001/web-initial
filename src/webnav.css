@@ -1,0 +1,72 @@
+.navlinkshead {
+    background-color: rgb(149, 70, 224);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px;
+  }
+  .navlinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .navlinks a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+  }
+  .navlinks li {
+    list-style-type: none;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .button1,
+  .button2 {
+    width: 90px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(203, 247, 138);
+    cursor: pointer;
+  }
+  .button1:hover,
+  .button2:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+  .menu {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    .menu {
+      display: flex;
+      cursor: pointer;
+    }
+    .navlinks {
+      display: none;
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      background-color: gray;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: unset;
+      gap: 20px;
+      padding: 13px 0;
+    }
+    .navlinks.active {
+      display: flex;
+    }
+  }
+  

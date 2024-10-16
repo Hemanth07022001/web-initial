@@ -1,0 +1,112 @@
+.hidden-form {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .form_container {
+   
+    border: 1px solid #000;
+    background-color: #fefefe;
+    margin: 0 auto;
+    width: 30%;
+    border-radius: 45px;
+    box-sizing: border-box;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    outline: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: bold;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  .form_container2 {
+    padding: 10px;
+  }
+  .sign-in {
+    float: right;
+    margin: 10px;
+  }
+  .signin-button {
+    padding: 10px;
+    background-color: rgba(0, 255, 0, 0.3);
+    cursor: pointer;
+  }
+  .submit {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #04aa6d;
+    margin: 8px 0;
+  }
+  .submit:hover {
+    opacity: 0.7;
+  }
+  .block {
+    display: block;
+  }
+  .img_container {
+    text-align: center;
+    position: relative;
+    margin: 12px 0;
+  }
+  
+  img.image {
+    width: 18%;
+    height: 10%;
+    border-radius: 50%;
+  }
+  .cross {
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .cross:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .animation {
+    animation-name: login;
+    -webkit-animation-name: login;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+  }
+  @keyframes login {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  @-webkit-keyframes login {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  /* Change styles for cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
